@@ -1,0 +1,44 @@
+{
+  "author": {
+    "name": "Duhoux Pierre-Louis",
+    "email": "pl.duhoux@gmail.com",
+    "url": "https://plduhoux.fr"
+  },
+  "bugs": {
+    "url": "https://github.com/plduhoux/strapi-provider-upload-clevercloud-cellar/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "aws-sdk": "^2.199.0"
+  },
+  "deprecated": false,
+  "description": "Clever Cloud Cellar provider for strapi upload",
+  "directories": {
+    "lib": "./lib"
+  },
+  "engines": {
+    "node": ">= 10.0.0",
+    "npm": ">= 6.0.0"
+  },
+  "homepage": "https://github.com/plduhoux/strapi-provider-upload-clevercloud-cellar",
+  "keywords": [
+    "upload",
+    "clevercloud",
+    "cellar",
+    "strapi"
+  ],
+  "license": "MIT",
+  "main": "./lib",
+  "name": "strapi-provider-upload-clevercloud-cellar",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/plduhoux/strapi-provider-upload-clevercloud-cellar.git"
+  },
+  "scripts": {
+    "test": "echo \"no tests yet\""
+  },
+  "strapi": {
+    "isProvider": true
+  },
+  "version": "1.0.0"
+}
