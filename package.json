@@ -9,7 +9,7 @@
   },
   "bundleDependencies": false,
   "dependencies": {
-    "aws-sdk": "^2.199.0"
+    "aws-sdk": "^2.457.0"
   },
   "deprecated": false,
   "description": "Clever Cloud Cellar provider for strapi upload",
@@ -40,5 +40,5 @@
   "strapi": {
     "isProvider": true
   },
-  "version": "1.0.0"
+  "version": "1.0.1"
 }
