@@ -32,6 +32,7 @@ Configuration example (extensions/upload/config/settings.json) :
 
 - 1.0.0 is compatible up to strapi 3.0.0-beta.19
 - 1.0.1 is compatible after strapi 3.0.0-beta.20
+- 1.0.3 is compatible with strapi 4
 
 ## Resources
 
