@@ -8,31 +8,36 @@ In your strapi project,
 npm i strapi-provider-upload-clevercloud-cellar
 ```
 
-Then, visit `https://strapi.io/documentation/3.0.0-beta.x/plugins/upload.html#using-a-provider` and configure your access to this provider
+Then, visit `https://docs.strapi.io/cloud/advanced/upload` and configure your access to this provider
 
 ## Configuration
 
-Configuration example (extensions/upload/config/settings.json) :
+Configuration example (config/plugins.js) :
 
-```json
-{
-  "provider": "clevercloud-cellar",
-  "providerOptions": {
-    "host": "cellar-c2.services.clever-cloud.com",
-    "accessKeyId": "keyId",
-    "secretAccessKey": "keySecret",
-    "params": {
-      "Bucket": "my-bucket"
-    }
-  }
-}
+```js
+module.exports = ({ env }) => ({
+  /*...*/
+  upload: {
+    config: {
+      provider: "strapi-provider-upload-clevercloud-cellar",
+      providerOptions: {
+        host: "cellar-c2.services.clever-cloud.com",
+        accessKeyId: process.env.CELLAR_KEY_ID,
+        secretAccessKey: process.env.CELLAR_KEY_SECRET,
+        params: {
+          Bucket: process.env.CELLAR_BUCKET,
+        },
+      },
+    },
+  },
+});
 ```
 
 ## Compatibility
 
 - 1.0.0 is compatible up to strapi 3.0.0-beta.19
 - 1.0.1 is compatible after strapi 3.0.0-beta.20
-- 1.0.3 is compatible with strapi 4
+- 1.0.4 is compatible with strapi 4
 
 ## Resources
 
